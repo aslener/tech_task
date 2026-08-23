@@ -5,10 +5,10 @@ while True:
         guessed_num = int(input("guess the number:"))
         if guessed_num<0 or guessed_num>100:
             print("Enter a valid number between 0 and 100")
-            break
         else:
             if guessed_num==target:
                 print("You have guessed correctly")
+                break
             elif guessed_num<target:
                 print("the number guessed is less than target number")
             else:
