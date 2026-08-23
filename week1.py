@@ -2,7 +2,7 @@ import random
 target = random.randint(0,100)
 while True:
     try:
-        guessed_num = int(input("guess the number:"))
+        guessed_num = int(input("guess anumber between 0 and 100:"))
         if guessed_num<0 or guessed_num>100:
             print("Enter a valid number between 0 and 100")
         else:
@@ -14,5 +14,5 @@ while True:
             else:
                 print("the number guessed is greater than target number")
     except Exception:
-        print("Please enter a valid number(a whole number between 0 and 100)")
+        print("Your input is not valid")
     
